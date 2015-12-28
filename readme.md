@@ -2,7 +2,10 @@
 
 This is an attempt to enumerate what Drinkspec is and how we should attempt to build it.
 
-Author: [@gooley](https://github.com/gooley)
+Authors:
+
+* [@gooley](https://github.com/gooley)
+* TBD
 
 ## Mission
 
