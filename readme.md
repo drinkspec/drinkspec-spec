@@ -1,3 +1,5 @@
+<img src="drinkspec.png" align="right" height="100" />
+
 # Drinkspec
 
 This is an attempt to enumerate what Drinkspec is and how we should attempt to build it.
