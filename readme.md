@@ -49,14 +49,14 @@ TBD
 
 In order to generalize the data, certain formal data structures will be necessary. We should make an effort to have a very minimal number of required fields in order to ease data entry and import. Augmenting and normalizing data after-the-fact should be made easy and batchable.
 
-When possible, references (like **Ingredients**) should be referenced by a human-readable name. Naming variations of identical Ingredients should be fuzzy-matched or human-aliased after-the-fact.
+When possible, references (like [**Ingredients**](#ingredient)) should be referenced by a human-readable name. Naming variations of identical Ingredients should be fuzzy-matched or human-aliased after-the-fact.
 
 #### Drink
 
-The **Drink** is our primary object and should be able to be completely specified in a single text document with implicit references to additional objects (e.g. *measures* may be an array of hashes)
+The **Drink** is our primary object and should be able to be completely specified in a single text document with implicit references to additional objects (e.g. [**measures**](#measure) may be an array of hashes)
 
 * name: String
-* measures: Set[**Measure**]
+* measures: Set[[**Measure**](#measure)]
 * steps: Seq[String]
 * tags: Set[**Tag**]
 * history: String
@@ -68,11 +68,11 @@ The **Drink** is our primary object and should be able to be completely specifie
 
 The **Measure** object aims to normalize unit-based measures of ingredients to enable changes of units (fluid ounces into milliliters) as well as multiplication of quantities (make 2 of this drink).
 
-The reference to **Ingredient** may be specified by a string name.
+The reference to [**Ingredient**](#ingredient) may be specified by a string name.
 
 * quantity: Decimal
 * unit: Enum (oz, splash, dashes, peel)
-* ingredient: **Ingredient**
+* ingredient: [**Ingredient**](#ingredient)
 * note: String
 * optional: Bool
 * garnish: Bool
